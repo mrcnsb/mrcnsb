@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class Main {
     static void main(String[] args) {
 //Napisz program, który rysuje prostokąt z gwiazdek o wymiarach podanych przez użytkownika.
-        Scanner scanner = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 //        System.out.println("podaj width");
 //        int width = scanner.nextInt();
 //        System.out.println("podaj height");
@@ -20,14 +20,19 @@ public class Main {
 //    Napisz program, który wyświetla piramidę z gwiazdek o wysokości podanej przez użytkownika.
 
 //        System.out.println("podaj szerokosc piramidy");
-        int pyramideHeight = scanner.nextInt();
+//        int pyramideHeight = scanner.nextInt();
 //        drawTree(pyramideHeight);
 
 //        Napisz program, który tworzy tablicę dwuwymiarową (macierz) 3x3, wypełnia ją liczbami od 1 do 9,
 
 
-        System.out.println(Arrays.deepToString(createMatrix()));
+//        int[][] matrix = createMatrix();
+//        System.out.println(Arrays.deepToString(matrix));
+
+        printMatrix(createMatrix());
     }
+
+
 
     public static int[][] createMatrix(){
         int[][] macierz = new int[3][3];
@@ -41,6 +46,14 @@ public class Main {
         return macierz;
     }
 
+    public static void printMatrix(int[][] matrix){
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                System.out.print(matrix[i][j]);
+            }
+            System.out.println();
+        }
+    }
 
     public static void drawTree(int pyramideHeight) {
     for (int i = 1; i <= pyramideHeight; i++) {
