@@ -10,26 +10,26 @@ import java.util.Scanner;
 public class Main {
     static void main(String[] args) {
 //Napisz program, który rysuje prostokąt z gwiazdek o wymiarach podanych przez użytkownika.
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("podaj width");
-//        int width = scanner.nextInt();
-//        System.out.println("podaj height");
-//        int height = scanner.nextInt();
-//        drawRectangle(width, height);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("podaj width");
+        int width = scanner.nextInt();
+        System.out.println("podaj height");
+        int height = scanner.nextInt();
+        drawRectangle(width, height);
 
 //    Napisz program, który wyświetla piramidę z gwiazdek o wysokości podanej przez użytkownika.
 
-//        System.out.println("podaj szerokosc piramidy");
-//        int pyramideHeight = scanner.nextInt();
-//        drawTree(pyramideHeight);
+        System.out.println("podaj szerokosc piramidy");
+        int pyramideHeight = scanner.nextInt();
+        drawTree(pyramideHeight);
 
 //        Napisz program, który tworzy tablicę dwuwymiarową (macierz) 3x3, wypełnia ją liczbami od 1 do 9,
 
 
-//        int[][] matrix = createMatrix();
-//        System.out.println(Arrays.deepToString(matrix));
+        int[][] matrix = createMatrix();
+        System.out.println(Arrays.deepToString(matrix));
 
-//        printMatrix(createMatrix());
+        printMatrix(createMatrix());
 
         printSzachownica();
     }
